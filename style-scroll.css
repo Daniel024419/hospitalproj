@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+
+
+.arrow{
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  z-index: 9; 
+
+}
+.arrow a{
+  height: 39px;
+  width: 37px;
+  text-align: center;
+  background: #000000 !important;
+  display: block;
+  border-radius: 50px;
+ 
+}
+.arrow a span{
+  color: #f2f2f2;
+  font-size: 25px;
+  line-height: 39px;
+  cursor: pointer;
+  
+  
+}
+ .arrow a:hover{
+    box-shadow: 2px 2px 12px rgb(97, 97, 97);
+    
+ }
+@keyframes shake {
+   
+    25%{
+      width: 10px !important;
+      height: 10px !important;
+      
+    }
+    50%{
+      height: 20px !important;
+       width: 20px !important;
+        
+    }
+    100%{
+      width: 40px !important;
+    }
+
+  }

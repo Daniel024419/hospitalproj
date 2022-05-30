@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HospitalName</title>
+  <link rel="stylesheet" href="sub.css">
+  <link rel="stylesheet" href="media-query.css">
+ <!-- popup-->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+ <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+  <link rel="stylesheet" href="style-nav.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="style-main.css">
+  <link rel="stylesheet" href="style-scroll.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+</head>
+<body>
+  <div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fa fa-bars"></i></label>
+      <div class="content">
+      <div class="logo"><a href="#">HospitalName</a></div>
+        <ul class="links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li>
+            <a href="#" class="desktop-link">Departments <i class="fa fa-angle-down"></i> </a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features">Departments <i class="fa fa-angle-down"></i></label>
+            <ul>
+              <li><a href="#">OPD</a></li>
+              <li><a href="#">LABS</a></li>
+              <li><a href="#">DIAGNOSTICS</a></li>
+              <li><a href="#">PHARMARCY</a></li>
+              <li><a href="#">FINANCE</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-link">Services <i class="fa fa-angle-down"></i></a>
+            <input type="checkbox" id="show-services">
+            <label for="show-services">Services <i class="fa fa-angle-down"></i></label>
+            <ul>
+              <li><a href="#">Our Doctors</a></li>
+              <li><a href="#">Our Workers</a></li>
+              <li><a href="#">Drop Menu 3</a></li>
+              <li>
+                <a href="#" class="desktop-link">More Items <i class="fa fa-angle-down"></i></a>
+                <input type="checkbox" id="show-items">
+                <label for="show-items">More Items <i class="fa fa-angle-down"></i></label>
+                <ul>
+                  <li><a href="#">Sub Menu 1</a></li>
+                  <li><a href="#">Sub Menu 2</a></li>
+                  <li><a href="#">Sub Menu 3</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" id="signin">Sign in</a>
+           
+          </li>
+        </ul>
+
+      </div>
+      <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+      <form action="#" class="search-box">
+        <input type="text" placeholder="Type Something to Search..." required>
+        <button type="submit" class="go-icon"><i class="fa fa-search"></i></button>
+      </form>
+    </nav>
+  </div>
+<!--- middle-body-->
+<div class="middle-body">
+  <div class="circle1">
+
+  </div>
+  <div class="leftblock">
+    <img src="objects/left-block.svg"  id="block-pic" class="block-pic" alt="left-block">
+  </div>
+<div class="block-msg" class="block-msg" >
+  We Are Providing Best And Affordable Health Care.......
+</div>
+<div class="msg">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+</div>
+
+<div class="image">
+  <img src="objects/picture.svg" alt="">
+</div>
+</div>
+<!-- sub-->
+<div class="sub-container">
+
+
+<div class="start-btn">
+  <a href="#">Subscribe <li class="fa fa-bell"></li> </a>
+</div>
+<div class="center modal-box">
+  <div class="fas fa-times"></div>
+  <div class="fas fa-envelope icon1"></div>
+  <header>Don't miss updates from us!</header>
+  <p>
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, suscipit, pers
+  </p>
+  <form action="" method="post">
+     <div class="fas fa-envelope icon2"></div>
+     <input type="email" required placeholder="abc@example.com">
+     <button>Subscribe <li class="fa fa-bell"></li> </button>
+  </form>
+  <div class="icons">
+     <i class="fab fa-facebook-f"></i>
+     <i class="fab fa-twitter"></i>
+     <i class="fab fa-instagram"></i>
+     <i class="fab fa-youtube"></i>
+  </div>
+</div>
+<script>
+  $(document).ready(function(){
+    $('.start-btn').click(function(){
+      $('.modal-box').toggleClass("show-modal");
+      $('.start-btn').toggleClass("show-modal");
+    });
+    $('.fa-times').click(function(){
+      $('.modal-box').toggleClass("show-modal");
+      $('.start-btn').toggleClass("show-modal");
+    });
+  });
+</script>
+</div>
+<div class="arrow">
+  <a href="#" title="Back to Top"><span class="fa fa-angle-up"></span></a>
+</div>
+
+</body>
+
+ 
+</html>
